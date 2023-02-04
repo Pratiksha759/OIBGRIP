@@ -1,0 +1,171 @@
+package newbie;
+
+import java.util.Scanner;
+
+
+public class Atm {
+	
+	   
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      
+		Scanner scan =new Scanner (System.in);
+		int pin;int ch,c; do {
+		System.out.println("AUTOMATED TELLER MACHINE");
+		System.out.println("\n\n************WELCOME TO DIGITAL TRANSECTION***********\n");
+		System.out.println("*To access your account please enter your ATM pin:*\n");
+		
+		System.out.println("enter your four digit pin number:");
+		 pin=scan.nextInt();
+		if(pin==1212) {
+        System.out.println("enter your choice\n" + "1.view\n"+"2.debit\n"+"3.credit\n"+"4.Transfer\n"+"5.Quit");
+		
+	        ch=scan.nextInt();
+	    if(ch==1) {   
+		view();}
+	    else if(ch==2) {
+		debit();}
+	    else if(ch==3) {
+		credit();}
+	    else if(ch==4) {
+			transfer();}
+	    else if(ch==5) {
+			System.out.println("thanks for visiting");}
+	    else {
+	    	System.out.println("invalid choice");
+	    }}
+	    else {
+	    	System.out.println("Invalid pin number\n"+"please try again!!!");
+	    }}
+		while(pin!=4);
+	}
+	
+	public static void view() {
+		int total=20000;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("total amount is: "+ total);
+		
+	}
+
+	public static void debit() {
+		int total=20000;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the amount to be debited:");
+		int amount=scan.nextInt();
+		int remain_balance=(total-amount);
+		System.out.println("reamin balance is:" +remain_balance);
+		System.out.println("Your money has been uccesfully debited!! \nPlease collect your money");
+		
+		
+	}
+	
+	public static void credit() {
+		int total=20000;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter the amount to be credited:");
+		int amount=scan.nextInt();
+		int remain_balance=(total+amount);
+		System.out.println("reamin balance is:" +remain_balance);
+
+	
+	
+	
+	}
+	 public static void transfer()
+     {
+		 int total=20000;
+	     Scanner scan=new Scanner(System.in);
+	     System.out.println("Account base transfer");
+	     System.out.println("Please select your account type: \n1)Saving account\n2)Current account\n3)CC/Deposite account\n4)Loan account");
+         int c,pin=1212;
+         System.out.println("Enter the choice of account:");
+         int choice=scan.nextInt();
+         switch(choice){
+        	
+         
+         case 1:
+         System.out.println("Saving account transfer");
+         System.out.println("To proceed please enter you atm pin:");
+         int pin4=scan.nextInt();
+         if(pin4==1212) {
+        	 System.out.println("please enter the account number of receiver:");
+        	 int ac=scan.nextInt();
+        	
+        	 System.out.println("Enter the ammount to be tarnsfer");
+        	 int amount=scan.nextInt();
+     		int remain_balance=(total-amount);
+     		System.out.println("reamin balance is:" +remain_balance);
+     		System.out.println("Your money has been succesfully transferred");
+     	 }
+         else {
+        	 System.out.println("invalid pin");
+         }
+	       
+			
+         
+         case 2:
+             System.out.println("Currnt account transfer:");
+             System.out.println("To proceed please enter you atm pin:");
+             int pin3=scan.nextInt();
+             if(pin3==1212) {
+            	 System.out.println("please enter the account number of receiver:");
+            	 int ac=scan.nextInt();
+            	
+            	 System.out.println("Enter the ammount to be tarnsfer");
+            	 int amount=scan.nextInt();
+         		int remain_balance=(total-amount);
+         		System.out.println("reamin balance is:" +remain_balance);
+         		System.out.println("Your money has been succesfully transferred");
+         	 }
+             else {
+            	 System.out.println("invalid pin");
+             }
+             
+           
+         case 3:
+             System.out.println("Deposite account transfer");
+             System.out.println("To proceed please enter you atm pin:");
+             int pin2=scan.nextInt();
+             if(pin2==1212) {
+            	 System.out.println("please enter the account number of receiver:");
+            	 int ac=scan.nextInt();
+            	
+            	 System.out.println("Enter the ammount to be tarnsfer");
+            	 int amount=scan.nextInt();
+         		int remain_balance=(total-amount);
+         		System.out.println("reamin balance is:" +remain_balance);
+         		System.out.println("Your money has been succesfully transferred");
+         	 }
+             else {
+            	 System.out.println("invalid pin");
+             }
+          
+             
+         case 4:
+             System.out.println("Loan account transfer");
+             System.out.println("To proceed please enter you atm pin:");
+             int pin1=scan.nextInt();
+             if(pin1==1212) {
+            	
+            	 System.out.println("please enter the account number of receiver:");
+            	 int ac=scan.nextInt();
+            	
+            	 System.out.println("Enter the ammount to be tarnsfer");
+            	 int amount=scan.nextInt();
+         		int remain_balance=(total-amount);
+         		System.out.println("reamin balance is:" +remain_balance);
+         		System.out.println("Your money has been succesfully transferred");
+         	 }
+             else {
+            	 System.out.println("invalid pin");
+             }
+     }
+	
+     }
+	 
+}
+	
+	
+	
+	
